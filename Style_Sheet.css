@@ -1,0 +1,57 @@
+﻿/* style sheet for my webstite*/
+
+body 	{background-color:rgb(213,235,254);font-family:verdana;margin:0;}
+h1	{font-family:Arial Black;font-size:310.5%;margin-top:0px;margin-bottom:0px;margin-left:66px;}
+h2	{margin-left:5px;}
+h3	{margin-left:5px;}
+.note	{font-size:75%;margin-left:5px;}
+li.main	{margin-bottom:2px;}
+b.pageheader	{font-size:25px;border:3px solid royalblue;padding:4px;border-radius:3px;}
+
+span#tagline	{margin-left:30px;margin-top:0px;padding:3px;font-size:20px;}
+
+.blurb 	{background-color:rgba(300,300,300,.75);border-radius: 0px 0px 10px 10px;}
+
+/*navigation banner*/
+.banner {padding-bottom:28px;background-color:rgb(145,156,177);color:rgb(250,255,232);}
+.topnav		{background-color: rgba(300,300,300,.75);width:100%;}
+.topnav a	{text-align:center;padding:24px;color:black;text-decoration:none;font-size:120%;}
+.topnav a:hover {background-color:white; color:royalblue;padding: 4px 24px;}
+
+
+/*buttons*/
+form	{margin-bottom:5px;margin-left:5px;}
+
+
+/*tables*/
+.sub {text-align: center;color: rgb(80,100,100)}
+tr.top	{
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: rgb(27,79,114);
+  color: white;
+}
+
+table#blogs {
+  width:70%;
+  border-spacing: 30px;
+}
+table#blogs td {
+  background-color:white;
+  padding:5px;
+  width:50%;
+  border-radius: 10px;
+}
+
+table#projects {
+  border:1px solid black;
+  border-collapse:collapse;
+  width:70%;
+}
+table#projects td {
+  padding: 15px;
+  border-collapse: collapse;
+}
+table#projects tr:nth-child(even) {
+ background-color: rgb(148,181,236);
+}
