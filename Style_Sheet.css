@@ -4,7 +4,7 @@ body 	{background-color:rgb(213,235,254);font-family:verdana;margin:0;}
 h1	{font-family:Arial Black;font-size:310.5%;margin-top:0px;margin-bottom:0px;margin-left:66px;}
 h2	{margin-left:5px;}
 h3	{margin-left:5px;}
-.note	{font-size:75%;margin-left:5px;}
+.note	{font-size:85%;margin-left:5px;margin-bottom:0px;}
 li.main	{margin-bottom:2px;}
 b.pageheader	{font-size:25px;border:3px solid royalblue;padding:4px;border-radius:3px;}
 
@@ -45,7 +45,6 @@ table#blogs td {
 }
 
 table#projects {
-  border:1px solid black;
   border-collapse:collapse;
   width:70%;
 }
