@@ -12,6 +12,10 @@ span#tagline	{margin-left:30px;margin-top:0px;padding:3px;font-size:20px;}
 
 .blurb 	{background-color:rgba(300,300,300,.75);border-radius: 0px 0px 10px 10px;}
 
+.blog	{margin-left:40px; margin-right:40px; margin-top:10px;}
+
+.code	{font-family: "Lucida Console", Monaco, monospace; background-color:white; padding:10px;}
+
 /*navigation banner*/
 .banner {padding-bottom:28px;background-color:rgb(145,156,177);color:rgb(250,255,232);}
 .banner2	{background-color:rgb(145,156,177);color:rgb(250,255,232);}

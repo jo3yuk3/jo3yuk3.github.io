@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../Style_Sheet.css">
+</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172118847-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-172118847-1');
+  </script>
+</head>
+
+<body>
+
+<div class="banner2" style="margin-bottom:10px;">
+  <div style="top:0;left:0;width:31%;height:122px;background-image:url('../Images/JY_logo.jpg');background-size:100%;padding:0;">
+  </div>
+  <div style="position:absolute;top:0;right:0;width:69%;height:122px;background-image:url('../Images/banner_image.jpg');background-size:100%;padding:0;">
+    <div class="topnav" style="position:absolute;bottom:0;padding: 4px 0px;">
+	<span style="color:rgba(0,0,0,0)"> lolz i am invisible </span>
+	<a class="btm" href="../index.html">Home</a>
+	<a class="btm" href="../Pages/cv.htm">CV</a>
+	<a class="btm" href="../Pages/Blogs.htm">Blogs</a> 
+	<a class="btm" href="../Pages/Projects.htm">Projects</a>
+    </div> 
+  </div>
+</div>
+
+
+<b class="pageheader">Blog:</b>
+
+<h2 style="margin:20px">How to Get Fit and Learn Data Science at the Same Time:</h2>
+<h3 style="margin:20px">November 1st, 2020</h3>
+
+<p class="blog">
+  While majoring in Economics during undergrad, I heard the term 'Data Science' thrown around constantly. It seemed like THE skill to have when looking for jobs&#47; internships. I wanted to learn how to code but was intimidated, not knowing where to start. If you’re like me, self-directed study is difficult when you have so much else on your plate. I checked out a handful of the online resources that were recommended to me by friends, but nothing really got me motivated to learn. What I needed was a project; a task to sink my teeth into and produce results.
+</p>
+<p class="blog">
+  Aside from learning to code, something I never found time for in college was working out. I was one of those people who started out every term with a fitness goal that was promptly abandoned after midterms. It occurred to me that I could combine these areas that I was lacking in and kill two birds with one stone. I simply decided to keep track of the time I spent exercising and create some visualizations of that data. As it turned out, this strategy was quite effective at getting me motivated to work towards both my fitness and data science goals. Here are the steps that I took:
+</p>
+
+<div class="blog" style="margin-bottom:30px;">
+  <b>1)</b> Start working out! Keep track of your progress on an excel sheet formatted like this:
+  <br>
+  <div style="text-align:center;">
+    <img src="../Images/Blog_Images/Blog_datasci/excel_data.png" style="width:450px;height:460px;margin:10px;">
+  </div>
+  Save your table as a CSV (Comma delimited) file into a folder you should create that is dedicated to this project.
+</div>
+
+<div class="blog" style="margin-bottom:30px;">
+  <b>2)</b> On the days you’re not getting swole, consider reading <a href="https://r4ds.had.co.nz/">R for Data Science</a>: <br><br>
+  This book serves as a great introduction to R. In the first few chapters it teaches you how to download R and make simple visualizations.
+  <br><br>
+  <div style="margin-left:20px;margin-bottom:20px;">
+    <b>a.</b> For instructions on downloading R go to <b>R for data science &gt; Introduction &gt; Prerequisites</b>. You'll need to download both R and <b>RStudio</b>.
+  </div>
+  <div style="margin-left:20px;">
+    <b>b.</b> Reading sections 1.4 – 1.5 and 3.1 – 3.3 should be enough to get you prepared for this project.
+  </div>
+</div>
+
+<div class="blog" style="margin-bottom:30px;">
+  <b>3)</b> Open RStudio and create a new <b>R script</b> by navigating to the drop down menu at the top left (the white square with the plus sign).
+  <div style="text-align:center;">
+    <img src="../Images/Blog_Images/Blog_datasci/new_script.png" style="width:450px;height:425px;margin:10px;">
+  </div>
+  <div style="margin-left:20px; margin-bottom:20px;">
+    <b>a.</b> Note that there are 2 different ways to run code in R:
+      <div style="margin-left:20px; margin-bottom:20px; margin-top:20px;">
+        <b>i. </b> Enter lines of code directly into the <b>Console</b> at the bottom left.
+      </div>
+      <div style="margin-left:20px; margin-bottom:20px;">
+        <b>ii.</b> Highlight lines of code from your script and hit the ‘Run’ button.
+      </div>
+    Lines of code written in the script can be saved for later whereas lines written in the console cannot. Practice running 1 + 1 each way.
+  </div>
+  <div style="text-align:center;">
+    <img src="../Images/Blog_Images/Blog_datasci/running_code.png" style="width:830px;height:465px;margin:10px;">
+  </div>
+  <div style="margin-left:20px; margin-bottom:20px; margin-top:20px;">
+    <b>b.</b> To accompany this project, I’ve written an .R file on github for reference:
+      <a href="https://github.com/jo3yuk3/R_tutorial_project/blob/main/exercise_proj.R">https://github.com/jo3yuk3/R_tutorial_project/blob/main/exercise_proj.R</a>
+  </div>
+  <div style="margin-left:20px; margin-bottom:20px;">
+    <b>c.</b> Note that it’s always good practice to mark up your programs with <b>Comments</b>. Any line or part of a line that has # in front of it is commented out which means it is only meant to be read by the user. R is not able to run commented lines of code.
+  </div>
+</div>
+
+<div class="blog" style="margin-bottom:30px;">
+  <b>4)</b> Install and load packages: <br><br>
+  A <b>Package</b> contains functions for use in your program. The package that we will focus on, <b>tidyverse</b>, is actually a group of different packages that allow us to clean data and create plots. To use the package, you’ll need to run the following lines of code:
+  <p class="code">
+    install.packages("tidyverse")
+    <br>
+    library(tidyverse)
+  </p>
+  You only need to install a package one time; however, you will need to load in the package using the library() command in each new session of R. <br>
+  (You might have to wait a while for tidyverse to install, don't fret)
+</div>
+
+<div class="blog" style="margin-bottom:30px;">
+  <b>5)</b> Change working directory: <br>
+  <div style="margin-left:20px; margin-bottom:20px;">
+    <b>a.</b> Locate the folder you’ve created for this project and copy the file path. It should look something like this:
+  </div>
+  <p class="code">
+    C:/Users/Joe Yuke/Documents/EFP/workout_project
+  </p>
+    <div style="margin-left:20px;">(Make sure to use foreward slashes in R when refering to file paths)</div>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>b.</b> A fundamental statement in all coding languages is the <b>Assignment</b> statement which assigns a specified value to a variable you create. We’ll now assign the file path to the variable 'wd'.
+  </div>
+  <p class="code">
+    wd &lt- "C:/Users/Joe Yuke/Documents/EFP/workout_project"
+  </p>
+    <div style="margin-left:20px;">Once you’ve assigned the variable, it will appear in the <b>Environment</b> at the top right. You can now use it in other functions. <br>For example, try typing out the command: <span style="background-color:white;">print(wd)</span></div>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>c.</b> Next, set your <b>Working Directory</b> with the following function:
+  </div>
+  <p class="code">
+    setwd(wd)
+  </p>
+    <div style="margin-left:20px;">This tells R where you’re working out of for this project i.e. where you’re pulling data from and where to output your plots once you’ve made them.</div>
+</div>
+
+<div class="blog" style="margin-bottom:30px;">
+  <b>6)</b> Load in data: <br>
+  <div style="margin-left:20px; margin-bottom:20px;">
+    <b>a.</b> For this step, we’ll use the function: read.csv() . So first, let’s look at the <b>Help</b> file for this function to see how to use it.
+  </div>
+  <p class="code">
+    ?read.csv
+  </p>
+    <div style="margin-left:20px;">We're interested in seeing which <b>Parameters</b> (statements within the parentheses of the function) are required. Here's what we get:</div>
+  <p class="code">
+    read.csv(file, header = TRUE, sep = ",", quote = "\"", dec = ".", fill = TRUE, comment.char = "", ...)
+  </p>
+    <div style="margin-left:20px;">This tells us that when calling the function, we only need to specify which file we’re pulling our data from. With the way our data is structured, we want to have a header, but the ‘header’ parameter is set to TRUE by default so we can leave it. The rest of the defaults are fine, so we’ll leave those too.</div>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>b.</b> Run the following code to turn our .csv file into a <b>Data Frame</b> in R:
+  </div>
+  <p class="code">
+    workout_data &lt- read.csv("Workouts_data.csv”)
+  </p>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>c.</b> It's helpful to check the data in R to see if it downloaded correctly. Click on 'workout_data' in the environment and see if it matches what we have on excel. 
+  </div>
+</div>
+
+<div class="blog" style="margin-bottom:30px;">
+  <b>7)</b> (Optional) Analyze data: <br>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>a.</b> A simple analysis we might want to conduct is to see how many observations we have in our data. The following code helps us do this:
+  </div>
+  <p class="code">
+    length(workout_data$Date)
+  </p>
+    <div style="margin-left:20px;">The 'length' function returns the number of objects in a vector. The vector we want to look at is the list of dates in our data frame. To extract just the date variable, we make use of the '$' operator which allows us to extract elements by name from a named list. <br>
+    Thus, this line tells us how many dates we have in our data frame.</div>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>b.</b> It is also useful to know the <b>Data Type</b> of the objects in our data. Some functions only accept certain types of data. To check our data, we’ll isolate specific entries by using the <b>Subset</b> operator: ‘[ ]’. The first number in the brackets refers to the row we are interested in, the second refers to the column.
+  </div>
+  <p class="code">
+    typeof(workout_data[1,3])
+  </p>
+    <div style="margin-left:20px;">Running this line should tell us that the type of the object in the 1st row and 3rd column is an integer. This is fine since this object refers to the number of minutes spent working out on the first day. (Run: <span style="background-color:white;">workout_data[1,3]</span> , to see exactly how many minutes this is).</div>
+  <p class="code">
+    typeof(workout_data[,1])
+  </p>
+    <div style="margin-left:20px;">Running this line tells us that the type of all the entries in the 1st column of our data are integers. However, we don’t want dates stored as integers. This will be a problem when creating our plots, so we will have to change the 'Date' variable into the date data type. <br>
+    (Extra: try running this and see what happens: <span style="background-color:white;">workout_data$Date[1:3]</span> )</div>
+</div>
+
+<div class="blog" style="margin-bottom:30px;">
+  <b>8)</b> Edit data: <br>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>a.</b> To format our dates correctly, change the 'Date' variable into the Date data type:
+  </div>
+  <p class="code">
+    workout_data$Date &lt- paste("2019", workout_data$Date, sep="-") <br>
+    workout_data$Date &lt- as.Date(workout_data$Date, format="%Y-%d-%b")
+  </p>
+    <div style="margin-left:20px;">Briefly, the 'paste' function serves to add the string "2019" onto the beginning of each entry in the vector of dates and is separated by "-" each time via the 'sep' parameter. Next, 'as.Date' changes each date into the desirable data type. We specify using the 'format' parameter how we'd like the date to appear. Check out this guide for more information: <a href=https://www.statmethods.net/input/dates.html>https://www.statmethods.net/input/dates.html</a></div>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>b.</b> Suppose we realize that we overstated how much we ran on some day. To correct this mistake, we can edit a single observation by assigning a new value to the desired cell.
+  </div>
+  <p class="code">
+    workout_data[18,4] &lt- 2.0
+  </p>
+    <div style="margin-left:20px;">This type of command should be familiar by now. Take a look at the data frame to see if your change was made successfully.</div>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>c.</b> Let’s also change the names of some of the variables in our data frame:
+  </div>
+  <p class="code">
+    colnames(workout_data)[3:4] &lt- c("Strength Minutes","Miles Ran")
+  </p>
+    <div style="margin-left:20px;">This line transforms the names of the 3rd to 4th columns through assignment of a vector of 2 string objects. <br>colnames() identifies the names of the variables, and c() creates a <b>Vector</b> of multiple objects separated by ','.</div>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>d.</b> Add a new row by first creating a list. <b>Lists</b> are basically vectors that can include objects of different types. We need the entries in our new row to be of the same type as their respective column.
+  </div>
+  <p class="code">
+    new_row      &lt- list("2019-01-30", "Wednesday", as.integer(20), as.numeric(1.0)) <br>
+    workout_data &lt- rbind(workout_data,new_row)
+  </p>
+    <div style="margin-left:20px;">The rbind() function then adds 'new_row' to the bottom of 'workout_data'.</div>
+</div>
+
+<div class="blog" style="margin-bottom:30px;">
+  <b>9)</b> Try out different types of graphs: <br>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>a.</b> ggplot() is the function for creating plots. When you use it, you must specify a <b>Geom</b>- the type of graph. For our project, we'll make some bar graphs with geom_col(). Try running the following lines one at a time and see what happens: <br>(Two lines of code separated by '+' should be thought of as one line)
+  </div>
+  <p class="code">
+    ggplot() + <br>
+      <span style="margin-left:20px;">geom_col(data=workout_data, aes(x=Date, y=`Strength Minutes`), fill="dodgerblue")</span><br><br>
+    ggplot() + <br>
+      <span style="margin-left:20px;">geom_col(data=workout_data, aes(x=Date, y=`Miles Ran`), fill="salmon")</span>
+  </p>
+    <div style="margin-left:20px;">As you can see, we are specifying the data we're using, which variables we want on the x-axis and y-axis, and the color (fill) we want our bars to be. <br>(Note that ` is not the same as ', and is used when referring to a variable with spaces in its name like `Strength Minutes`)</div>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>b.</b> We also need to specify the <b>Aesthetics</b> we want to use. <br> From the help file for aes(): <i>Aesthetic mappings describe how variables in the data are mapped to visual properties (aesthetics) of geoms.</i> <br>
+    To illustrate its purpose, let's change the bar color to represent day of the week by including 'fill=Weekday' in aes():
+  </div>
+  <p class="code">
+    ggplot() + <br>
+      <span style="margin-left:20px;">geom_col(data=workout_data, aes(x=Date, y=`Strength Minutes`, fill=Weekday))</span><br>
+  </p>
+    <div style="margin-left:20px;">We should get something that looks like this:</div>
+  <div style="text-align:center;">
+    <img src="../Images/Blog_Images/Blog_datasci/strength_plot.png" style="width:460px;height:320px;margin:10px;">
+  </div>
+  <div style="margin-left:20px; margin-top:20px;">
+    <b>c.</b> Lastly, we use ggsave() to create image files for our plots: <br>First, we assign a name to our plot, 'my_plot', then use the ggsave() function.
+  </div>
+  <p class="code">
+    my_plot &lt- ggplot() + <br>
+      <span style="margin-left:20px;">geom_col(data=workout_data, aes(x=Date, y=`Strength Minutes`, fill=Weekday))</span><br><br>
+    ggsave(paste(wd,"strength_plot.png", sep="/"), my_plot, height=4, width=6)
+  </p>
+  <div style="margin-left:20px;">ggsave() requires us to input the full path of the image file we want to create, so we use the paste() function again.</div>
+</div>
+
+<div class="blog" style="margin-bottom:30px;">
+  <b>10)</b> Become a couch potato again: <br><br>
+  Congratulations on completing your first project! Hopefully you've learned something from this experience. Obviously, data science goes waaaaay beyond the scope of this blog, but it should be a good place to start. <br>If you want to keep working, I recommend you read more of <i>R for Data Science</i> and try out some of the new things you learn with this data, or find some new data to work with. Also, if you ever run into a coding problem you can't get past, you can look up pretty much any question about R on Google and the odds are that someone has already asked the same question.
+  <br><br>Here are more resources to check out: <br>
+  <ul>
+    <li><a href="https://learn.datacamp.com/courses">Data Camp</a></li>
+  </ul>
+</div>
+
+
+<br>
+
+<div class="banner">
+  <p style="text-align:center;">joe@batmgmt.com</p>
+  <form>
+    <input type="button" value="Home" onclick="window.location.href='../index.html'"/>
+  </form>
+<div>
+
+</body>
+</html>
+
