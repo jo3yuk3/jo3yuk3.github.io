@@ -26,6 +26,22 @@ b.pageheader	{font-size:25px; border:3px solid royalblue; padding:4px; border-ra
 /*buttons*/
 form	{margin-bottom:5px;margin-left:5px;}
 
+.homepage_links {position:relative; width:30%; border-radius:4px; padding:0; height:300px;}
+.homepage_img   {display:block; width:100%; height:auto;}
+.overlay        {position:absolute; top:0; bottom:0; left:0; right:0; opacity:0.6; 
+                 transition:0.2s ease; background-color:rgb(0,0,0,0.3) ;border-radius:5px;}
+.homepage_links:hover .overlay {opacity:1;}
+.link_text {color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;}
+
+
 
 /*tables*/
 .sub {text-align: center;}
